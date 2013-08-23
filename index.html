@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sample Backbone app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <a id="return" href="#home">Empires game data</a>
+        <div id="content"></div>
+
+        <script type="text/template" id="navigation-link">
+            <a href="#<%- route %>"><%- route %></a>
+        </script>
+
+        <script type="text/template" id="cardlist-card">
+            <header class="title"><%- title %></header>
+            <p class="text"><%- text %></p>
+        </script>
+
+        <script type="text/template" id="empirelist-empire">
+            <header class="title"><%- title %></header>
+            <p class="text"><strong>Leader:</strong><%- leader %></p>
+            <p class="text"><strong>Armies:</strong><%- units %></p>
+        </script>
+
+        <script type="text/template" id="territorylist-territory">
+            <header class="title"><%- title %></header>
+        </script>
+
+        <script type="text/javascript" src="js/vendor/jquery-2.0.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/underscore-1.4.4.min.js"></script>
+        <script type="text/javascript" src="js/vendor/backbone-1.0.0.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/vendor/requirejs-2.1.6.min.js"
+                data-main="js/main.js"></script>
+    </body>
+</html>
